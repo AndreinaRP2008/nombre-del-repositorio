@@ -1,28 +1,66 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #f0f4f8; /* Color de fondo más suave */
     margin: 0;
     padding: 20px;
+    color: #333; /* Color del texto */
 }
 
-#word-container {
-    font-size: 24px;
+/* Estilos del encabezado */
+h1 {
+    color: #007bff; /* Color azul para el título */
     margin-bottom: 20px;
 }
 
+/* Contenedor de la palabra */
+#word-container {
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    margin-bottom: 20px;
+    color: #555; /* Color gris oscuro */
+}
+
+/* Estilos del campo de entrada de letras */
 #letter-input {
     padding: 10px;
-    font-size: 16px;
+    font-size: 1.2rem;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
 }
 
+/* Estilos del botón */
 #guess-button, #reset-button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
     margin-top: 10px;
+    border: none;
+    border-radius: 30px; /* Bordes más redondeados */
     cursor: pointer;
+    color: #fff;
+    background: linear-gradient(45deg, #6a0dad, #1e90ff); /* Gradiente morado y azul */
+    transition: background 0.3s, transform 0.2s;
 }
 
+/* Estilo cuando el botón es presionado */
+#guess-button:active, #reset-button:active {
+    background: linear-gradient(45deg, #5a0b9d, #1c80ff); /* Gradiente más oscuro para el estado activo */
+}
+
+/* Estilo de los botones cuando se pasa el ratón por encima */
+#guess-button:hover, #reset-button:hover {
+    background: linear-gradient(45deg, #7b1fa2, #1f8eff); /* Gradiente más brillante al pasar el ratón */
+}
+
+/* Ocultar elementos */
 .hidden {
     display: none;
+}
+
+/* Estilo del mensaje */
+#message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
 }
